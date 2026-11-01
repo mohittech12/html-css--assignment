@@ -1,0 +1,97 @@
+:root {
+  --color-background: #f5f2eb;
+  --color-surface: #ffffff;
+  --color-text: #202b38;
+  --color-muted: #596779;
+  --color-accent: #27746a;
+
+  --font-body: "DM Sans", sans-serif;
+  --font-heading: "Playfair Display", serif;
+
+  --font-size-body: 1rem;
+  --font-size-title: 2.8rem;
+  --space-small: 0.75rem;
+  --space-medium: 1.5rem;
+  --space-large: 3rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--color-text);
+  background: var(--color-background);
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  line-height: 1.7;
+}
+
+.portfolio-page {
+  min-height: 100vh;
+}
+
+header {
+  padding: var(--space-large) var(--space-medium);
+  color: var(--color-surface);
+  background: var(--color-accent);
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--font-size-title);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-small);
+  padding: var(--space-medium);
+  background: var(--color-surface);
+}
+
+nav a {
+  padding: 0.5rem 0.8rem;
+  color: var(--color-accent);
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  color: var(--color-surface);
+  background: var(--color-accent);
+}
+
+main {
+  width: min(900px, 92%);
+  margin: var(--space-large) auto;
+}
+
+main > section {
+  margin-bottom: var(--space-medium);
+  padding: var(--space-medium);
+  background: var(--color-surface);
+  border-radius: 10px;
+}
+
+#projects {
+  border-left: 5px solid var(--color-accent);
+}
+
+p {
+  color: var(--color-muted);
+}
+
+footer {
+  padding: var(--space-medium);
+  text-align: center;
+}
