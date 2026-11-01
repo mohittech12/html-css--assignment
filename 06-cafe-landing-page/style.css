@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #34271f;
+  background: #faf6ef;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.site-header {
+  padding: 18px;
+  text-align: center;
+  background: #fffdf9;
+  border-bottom: 1px solid #e4d8c9;
+}
+
+.brand {
+  display: inline-block;
+  margin-right: 24px;
+  color: #6b3f25;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav {
+  display: inline-block;
+}
+
+nav a {
+  display: inline-block;
+  margin: 6px;
+  padding: 8px 12px;
+  color: #34271f;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+nav a:hover {
+  color: white;
+  background: #795238;
+}
+
+.hero {
+  position: relative;
+  min-height: 480px;
+  overflow: hidden;
+  background-color: #493326;
+  background-image: url("https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1600&q=80");
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(25, 17, 12, 0.62);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 90px 24px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: Georgia, serif;
+  font-size: 2.8rem;
+  line-height: 1.15;
+}
+
+.eyebrow {
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.button,
+button {
+  display: inline-block;
+  padding: 12px 20px;
+  color: white;
+  background: #a9673f;
+  border: 2px solid #a9673f;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover,
+button:hover {
+  background: #77472d;
+  border-color: #77472d;
+}
+
+.section {
+  max-width: 900px;
+  padding: 48px 24px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  color: #6b3f25;
+  font-family: Georgia, serif;
+  font-size: 2rem;
+}
+
+.service-card {
+  padding: 20px;
+  margin: 16px 0;
+  border: 1px solid #e4d8c9;
+  border-radius: 12px;
+  box-shadow: 0 5px 14px rgba(52, 39, 31, 0.10);
+}
+
+.card-coffee {
+  background: #fffdf9;
+  border-left: 6px solid #a9673f;
+}
+
+.card-bakery {
+  background: #f2e5d5;
+  border-radius: 24px 6px 24px 6px;
+}
+
+.card-study {
+  color: white;
+  background: #52634d;
+  border-color: #52634d;
+  box-shadow: 0 8px 18px rgba(36, 50, 34, 0.2);
+}
+
+.gallery figure {
+  display: inline-block;
+  width: 46%;
+  margin: 1%;
+  vertical-align: top;
+  overflow: hidden;
+  background: white;
+  border: 1px solid #e4d8c9;
+  border-radius: 10px;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.gallery figcaption {
+  padding: 12px;
+}
+
+.contact {
+  padding-bottom: 56px;
+}
+
+.contact label {
+  display: block;
+  margin-top: 14px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  font: inherit;
+  border: 1px solid #cbbba9;
+  border-radius: 6px;
+}
+
+.contact button {
+  margin-top: 16px;
+}
+
+.site-footer {
+  padding: 24px;
+  color: white;
+  background: #34271f;
+  text-align: center;
+}
+
+.site-footer a {
+  color: #f2c79f;
+}
