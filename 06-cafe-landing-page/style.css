@@ -194,3 +194,44 @@ button:hover {
 .site-footer a {
   color: #f2c79f;
 }
+@media (max-width: 640px) {
+  .site-header {
+    padding: 14px;
+  }
+
+  .brand {
+    display: block;
+    margin: 0 0 8px;
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav a {
+    margin: 3px;
+    padding: 7px 9px;
+  }
+
+  .hero {
+    min-height: 400px;
+  }
+
+  .hero-content {
+    padding: 64px 18px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .section {
+    padding: 34px 18px;
+  }
+
+  .gallery figure {
+    display: block;
+    width: 100%;
+    margin: 16px 0;
+  }
+}
