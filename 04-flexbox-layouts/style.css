@@ -31,3 +31,40 @@ body {
 .menu-bar a:hover {
   color: #f2c078;
 }
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.login-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: min(100%, 380px);
+  padding: 28px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.login-card h1,
+.login-card p {
+  margin: 0;
+}
+
+.login-card input,
+.login-card button {
+  padding: 12px;
+  font: inherit;
+  border: 1px solid #bbc5bf;
+  border-radius: 6px;
+}
+
+.login-card button {
+  color: white;
+  background: #273b32;
+  cursor: pointer;
+}
