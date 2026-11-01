@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A sample job application form">
+  <meta name="author" content="Mohit Sharma">
+  <title>Job Application Form</title>
+</head>
+<body>
+  <header>
+    <h1>Job Application Form</h1>
+    <p>Please fill in the form to apply.</p>
+  </header>
+
+  <main>
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="full-name">Full name:</label>
+        <input type="text" id="full-name" name="full-name"
+               placeholder="Enter your name" minlength="2" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"
+               placeholder="name@example.com" required>
+
+        <label for="password">Create a password:</label>
+        <input type="password" id="password" name="password"
+               placeholder="At least 8 characters" minlength="8" required>
+
+        <label for="phone">Phone number:</label>
+        <input type="tel" id="phone" name="phone"
+               placeholder="10-digit number" pattern="[0-9]{10}" required>
+
+        <label for="website">Portfolio website:</label>
+        <input type="url" id="website" name="website"
+               placeholder="https://example.com">
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"
+               min="18" max="100" placeholder="18 or older" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Role and Availability</legend>
+
+        <label for="role">Role you are applying for:</label>
+        <select id="role" name="role" required>
+          <option value="">Choose a role</option>
+          <option value="intern">Intern</option>
+          <option value="designer">Web designer</option>
+          <option value="developer">Web developer</option>
+        </select>
+
+        <p>Preferred work arrangement:</p>
+        <input type="radio" id="onsite" name="work-arrangement"
+               value="onsite" required>
+        <label for="onsite">On-site</label>
+
+        <input type="radio" id="remote" name="work-arrangement"
+               value="remote">
+        <label for="remote">Remote</label>
+
+        <input type="checkbox" id="relocate" name="relocate" value="yes">
+        <label for="relocate">I am willing to relocate</label>
+
+        <label for="start-date">Available start date:</label>
+        <input type="date" id="start-date" name="start-date" required>
+
+        <label for="interview-time">Preferred interview time:</label>
+        <input type="time" id="interview-time" name="interview-time">
+
+        <label for="city">Preferred work city:</label>
+        <input type="text" id="city" name="city"
+               placeholder="Choose or type a city" list="city-options">
+        <datalist id="city-options">
+          <option value="Bareilly">
+          <option value="Delhi">
+          <option value="Lucknow">
+        </datalist>
+      </fieldset>
+
+      <fieldset>
+        <legend>More Details</legend>
+
+        <label for="resume">Upload your resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+
+        <label for="experience">Years of experience:</label>
+        <input type="range" id="experience" name="experience"
+               min="0" max="20" value="0">
+
+        <label for="favorite-color">Choose a favorite color:</label>
+        <input type="color" id="favorite-color" name="favorite-color">
+
+        <label for="message">Why are you interested in this role?</label>
+        <textarea id="message" name="message" rows="5"
+                  placeholder="Write a short message" required></textarea>
+      </fieldset>
+
+      <button type="submit">Submit application</button>
+      <button type="reset">Reset form</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>Created by Mohit Sharma</p>
+  </footer>
+</body>
+</html>
