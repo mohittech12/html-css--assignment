@@ -77,3 +77,56 @@ figcaption {
 .product-card h2 {
   margin-top: 0;
 }
+.dashboard-layout {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+}
+
+.dashboard-header {
+  grid-area: header;
+  padding: 18px 24px;
+  color: white;
+  background: #243047;
+}
+
+.dashboard-sidebar {
+  grid-area: sidebar;
+  padding: 20px;
+  background: #e2e8f0;
+}
+
+.dashboard-sidebar a {
+  display: block;
+  margin: 12px 0;
+  color: #243047;
+}
+
+.dashboard-main {
+  grid-area: main;
+  padding: 24px;
+}
+
+.dashboard-footer {
+  grid-area: footer;
+  padding: 14px;
+  color: white;
+  background: #243047;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .dashboard-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main"
+      "footer";
+  }
+}
