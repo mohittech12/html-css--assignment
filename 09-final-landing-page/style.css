@@ -179,3 +179,111 @@ h2 {
   background: var(--color-ink);
   text-align: center;
 }
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-medium);
+}
+
+.site-logo {
+  margin-right: 0;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-small);
+}
+
+.site-nav a,
+.site-footer a {
+  margin: 0;
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  grid-template-areas:
+    "hero hero"
+    "intro intro"
+    "features gallery"
+    "contact contact";
+  gap: var(--space-medium);
+}
+
+.hero {
+  grid-area: hero;
+}
+
+.intro {
+  grid-area: intro;
+}
+
+.features {
+  grid-area: features;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-small);
+}
+
+.features h2 {
+  grid-column: 1 / -1;
+}
+
+.service-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-small);
+  margin: 0;
+}
+
+.service-copy {
+  display: block;
+}
+
+.gallery {
+  grid-area: gallery;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-small);
+}
+
+.gallery h2 {
+  grid-column: 1 / -1;
+}
+
+.gallery figure {
+  display: block;
+  width: auto;
+  margin: 0;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-small);
+}
+
+.button {
+  margin: 0;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-medium);
+}
+
+.site-footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-small);
+}
