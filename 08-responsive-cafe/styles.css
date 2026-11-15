@@ -194,18 +194,13 @@ button:hover {
 .site-footer a {
   color: #f2c79f;
 }
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .site-header {
     padding: 14px;
   }
 
   .brand {
-    display: block;
-    margin: 0 0 8px;
-  }
-
-  nav {
-    display: block;
+    margin-right: 10px;
   }
 
   nav a {
@@ -214,24 +209,73 @@ button:hover {
   }
 
   .hero {
-    min-height: 400px;
+    min-height: 420px;
   }
 
   .hero-content {
-    padding: 64px 18px;
+    padding: 68px 22px;
   }
 
   .hero h1 {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
 
   .section {
-    padding: 34px 18px;
+    padding: 38px 20px;
+  }
+
+  .gallery figure {
+    width: 47%;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand {
+    display: block;
+    margin: 0 0 10px;
+  }
+
+  nav {
+    display: block;
+  }
+
+  .hero {
+    min-height: 370px;
+  }
+
+  .hero-content {
+    padding: 48px 16px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .section {
+    padding: 30px 16px;
+  }
+
+  .section h2 {
+    font-size: 1.55rem;
   }
 
   .gallery figure {
     display: block;
     width: 100%;
-    margin: 16px 0;
+    margin: 14px 0;
+  }
+
+  .gallery img {
+    height: 200px;
+  }
+
+  .contact input,
+  .contact textarea {
+    font-size: 16px;
+  }
+
+  .contact button {
+    width: 100%;
+    min-height: 44px;
   }
 }
